@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg);
+  transition: all 0.3s linear;
+}
+
+.card-title,
+.card-text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card-body {
+  position: relative;
+}
+
+.project-link {
+  display: block;
+  position: absolute;
+  bottom: 11px;
+  right: 29px;
+  text-decoration: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.markdown img{
+  display: block;
+  width: 75%;
+  height: auto;
+}
