@@ -15,7 +15,7 @@ const UserState = (props) => {
 
   //get all the projects form the database........
   const getProjects = async () => {
-    console.log('inside get projects');
+    // console.log('inside get projects');
 
     let response = await fetch(
       '/project/all-projects',
@@ -23,9 +23,9 @@ const UserState = (props) => {
         method: 'get'
       }
     );
-    console.log('response', response);
+    // console.log('response', response);
     response = await response.json();
-    console.log('response after json', response);
+    // console.log('response after json', response);
 
     if (response.isSuccessfull === true) {
       const projectArray = [];
@@ -47,7 +47,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
 
     if (response.isSuccessfull === true) {
       const blogArray = [];
@@ -68,7 +68,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
     if (response.isSuccessfull === true) {
       const recommendationArray = [];
       response.recommendations.forEach((recommendation) => {
@@ -90,7 +90,7 @@ const UserState = (props) => {
       }
     );
     response = await response.json();
-    console.log(response);
+    // console.log(response);
     if (response.isSuccessfull === true) {
       const skillArray = [];
       for (let i = 0; i < response.skills.length; i++) {

@@ -13,7 +13,7 @@ const BlogSection = () => {
                 My <span className="text-info">Blogs</span>
             </h1>
             <div className="lead text-center">I share my views on technology in these blogs</div>
-            <div className="row my-5 pt-3 container">
+            <div className="row my-5 pt-3 container mx-auto">
                 {
                     blogs.slice(0, 3).map((blog) => {
                         return (
