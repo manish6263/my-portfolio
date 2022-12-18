@@ -17,7 +17,7 @@ const BlogSection = () => {
                 {
                     blogs.slice(0, 3).map((blog) => {
                         return (
-                            <div key={blog.id} className="col-12 col-md-4 my-2">
+                            <div key={blog.id} className="col-12 col-sm-6 col-md-4 my-2">
                                 <BlogCard blog={blog} />
                             </div>
                         )

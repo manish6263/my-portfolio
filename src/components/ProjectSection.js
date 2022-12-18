@@ -17,7 +17,7 @@ const ProjectSection = () => {
                 {
                     projects.slice(0, 3).map((project) => {
                         return (
-                            <div key={project.id} className="col-12 col-md-4 my-2">
+                            <div key={project.id} className="col-12 col-sm-6 col-md-4 my-2">
                                 <ProjectCard project={project} />
                             </div>
                         )

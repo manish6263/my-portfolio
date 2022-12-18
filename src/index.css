@@ -16,6 +16,13 @@ a {
 .card-body {
   position: relative;
 }
+.card{
+  overflow: hidden;
+}
+.card-img-top:hover{
+  transition: all 0.4s linear;
+  transform: scale(1.1);
+}
 
 .project-link {
   display: block;
